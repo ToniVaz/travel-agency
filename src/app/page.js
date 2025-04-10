@@ -8,12 +8,10 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <IntroSection/>
-      <FeaturedImage/>
-      <BannerSection/>
       <Infosection/>
-
-
+      <BannerSection/>
+      <FeaturedImage/>
+      <IntroSection/>
     </main>
   );
 }
