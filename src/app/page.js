@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <IntroSection/>
+      <FeaturedImage/>
       <BannerSection/>
       <Infosection/>
-      <FeaturedImage/>
-      <IntroSection/>
 
 
     </main>
