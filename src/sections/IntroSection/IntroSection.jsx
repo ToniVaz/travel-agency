@@ -10,7 +10,7 @@ const benefits = [
   const IntroSection = () => {
     return (
 <section
-  className="text-gray-800 pt-32 pb-16 px-6 md:px-12 relative"
+  className="text-gray-800 pt-10 pb-1 px-6 md:px-12 relative"
   // style={{ backgroundColor: "#f5cd52" }}
 >
   <div className="relative z-10 max-w-4xl mx-auto text-center">
