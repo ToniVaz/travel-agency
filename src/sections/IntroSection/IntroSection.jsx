@@ -15,7 +15,7 @@ const benefits = [
 >
   <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-snug">
-          <span className="font-bold text-black">La mejor aventura</span> de tu vida<br />
+          <span className="font-bold text-[#1e2939]">La mejor aventura</span> de tu vida<br />
           <span className="text-gray-500">la vivis con Bull Travel</span>
         </h2>
           {/* Iconos */}
