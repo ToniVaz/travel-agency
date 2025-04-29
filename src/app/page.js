@@ -21,8 +21,8 @@ export default function Home() {
       <InAppRecommendations/>
       <ContactOptions/>
       <MedicalCoverage/>
-      <FeaturedImage/>
       <MedicalCoveragePricing/>
+      <FeaturedImage/>
       <BannerSection/>
       <ContactFooter/>
     </main>

@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="absolute bottom-0 w-full h-32 bg-gradient-to-b from-transparent to-white z-10" />
 
       {/* Navbar */}
-         {/* <Navbar/> */}
+         <Navbar/>
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-20 text-[#1e2939] px-4 drop-shadow-md">
         <h1 className="text-3xl md:text-5xl font-bold">
@@ -35,11 +35,12 @@ const Hero = () => {
             Viajes de egresados y educativos para jardín, primaria y secundaria.
           </p>
           <a
-            href="#contacto"
-            className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300"
-          >
-            ¡Armá tu viaje!
-          </a>
+  href="#contacto"
+  className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300"
+>
+  ¡Armá tu viaje!
+</a>
+
       </div>
     </div>
   );

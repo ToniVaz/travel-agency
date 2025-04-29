@@ -1,56 +1,27 @@
-import React from "react";
-
- const MedicalCoveragePricing = () => {
+export default function PricingHeader() {
   return (
-    <section className="bg-gray-100 py-16 px-4">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12">Pricing</h2>
+    <section className="relative bg-[#0f0f1a] text-white py-24 px-6 text-center overflow-hidden">
+      {/* Efecto de glow */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-[300px] h-[300px] bg-purple-600 opacity-30 blur-3xl rounded-full"></div>
+      </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-          {/* Plan 1 */}
-          <div className="bg-white rounded-3xl shadow-lg p-8 w-full md:w-1/3 relative">
-            <div className="absolute top-4 right-4 text-sm text-yellow-500 font-semibold">Active</div>
-            <h3 className="text-2xl font-bold mb-4">Recruit Basic</h3>
-            <p className="text-4xl font-bold mb-2">$17</p>
-            <p className="text-gray-500 mb-6">/ month (USD) <br /> $228 billed yearly</p>
-            <ul className="text-gray-700 mb-8 space-y-2 text-left">
-              <li>✔️ Access to core HR features</li>
-              <li>✔️ Employee record management</li>
-              <li>✔️ Basic reporting tools</li>
-              <li>✔️ Manage up to 10 team members</li>
-              <li>❌ Track employee attendance</li>
-              <li>❌ Assign and monitor tasks</li>
-              <li>❌ Email support</li>
-              <li>❌ Simple onboarding process</li>
-            </ul>
-            <button className="bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-300 transition">
-              Cancel
-            </button>
-          </div>
+      <div className="relative z-10 max-w-4xl mx-auto">
+        <h2 className="text-4xl sm:text-5xl font-extrabold mb-6 leading-tight">
+          Los mejores precios del mercado
+        </h2>
+        <p className="text-gray-300 text-lg sm:text-xl mb-10">
+          Flexible y transparente. Diseñado para que puedas vivir tu viaje sin preocuparte por su costo.
+        </p>
 
-          {/* Plan 2 - DESTACADO */}
-          <div className="bg-black text-white rounded-3xl shadow-2xl p-8 w-full md:w-1/3 relative border-4 border-yellow-400">
-            <div className="absolute top-4 right-4 text-sm bg-yellow-400 text-black px-2 py-1 rounded-full font-semibold">Save 27%</div>
-            <h3 className="text-2xl font-bold mb-4">Talent Pro</h3>
-            <p className="text-2xl text-gray-400 line-through">$26</p>
-            <p className="text-4xl font-bold mb-2">$19</p>
-            <p className="text-gray-400 mb-6">/ month (USD) <br /> $228 billed yearly</p>
-            <ul className="text-gray-300 mb-8 space-y-2 text-left">
-              <li>✔️ Access to core HR features</li>
-              <li>✔️ Employee record management</li>
-              <li>✔️ Basic reporting tools</li>
-              <li>✔️ Manage up to 10 team members</li>
-              <li>✔️ Track employee attendance</li>
-              <li>✔️ Assign and monitor tasks</li>
-              <li>❌ Email support</li>
-              <li>❌ Simple onboarding process</li>
-            </ul>
-            <button className="bg-white text-black font-semibold py-3 px-6 rounded-full hover:bg-gray-200 transition">
-              Start 7-days Free Trial
-            </button>
-          </div>
-</div>
-</div>
-</section>)}
-
-export default MedicalCoveragePricing
+        {/* Toggle visual (no funcional) */}
+        <div className="inline-flex bg-[#1a1a2e] text-sm rounded-full overflow-hidden border border-gray-600 uppercase">
+          <button className="px-5 py-2 bg-white text-black font-semibold uppercase">Viajá</button>
+          <button className="px-5 py-2 text-white relative">
+             <span className="ml-2 text-green-400 font-semibold uppercase">Barato</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
